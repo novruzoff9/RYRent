@@ -1,0 +1,116 @@
+<!doctype html>
+
+<html lang="az">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Sertifikatlı Alman dili hazırlığı" />
+    <title>RY Rent</title>
+    <link rel="icon" type="image/png" href="./assets/img/Flag.png" />
+    <link rel="stylesheet" href="./assets/css/sass/home.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div id="top-header">
+        <div id="top-left-header">
+          <a href="#">RY Rent</a>
+        </div>
+        <div id="top-right-header">
+          <i class="far fa-heart"></i>
+          <i class="far fa-bell"></i>
+          <a href="login.html">Daxil ol <i class="fas fa-sign-in-alt"></i></a>
+          <i class="far fa-sun"></i>
+        </div>
+      </div>
+      <div id="bottom-header">
+        <ul>
+          <li>
+            <a href="#">Bütün elanlar</a>
+          </li>
+          <li>
+            <a href="#">Satıcılar</a>
+          </li>
+          <li>
+            <a href="#">Tərəfdaşlar</a>
+          </li>
+          <li>
+            <a href="#">Qaydalar</a>
+          </li>
+          <li>
+            <a href="#">Tez-Tez soruşulanlar</a>
+          </li>
+        </ul>
+        <a id="addnewsell" href="#">Yeni elan &nbsp;<i class="fas fa-plus"></i></a>
+      </div>
+    </header>
+
+    <section id="categories">
+      <h2 class="header-title">Trend kateqoriyalar</h2>
+      <h5>İstəyinizə uyğun kateqoriyanı seçin və icarələyin!</h5>
+      <div id="categories-list">
+        <a href="#" class="category">
+          <p class="title">Elektronika</p>
+          <p class="caption">Evinizə lazım olan elektronik avadanlıqlar</p>
+          <p class="count">145 elan</p>
+          <img src="assets/img/Categories/Language.jpg" alt="">
+        </a>
+        <a href="#" class="category">
+          <p class="title">Oyun & Əyləncə</p>
+          <p class="caption">Sevdiklərinizlə xoş zaman keçirin</p>
+          <p class="count">92 elan</p>
+          <img src="assets/img/Categories/Prograaming.jpg" alt="">
+        </a>
+        <a href="#" class="category">
+          <p class="title">Vokal alətləri</p>
+          <p class="caption">İçinizdən sənətkarı çıxartmağın vaxtıdır</p>
+          <p class="count">36 elan</p>
+          <img src="assets/img/Categories/Design.jpg" alt="">
+        </a>
+        <a href="#" class="category">
+          <p class="title">Kitab</p>
+          <p class="caption">Burda da kitab üçün bidənə bomba cümlə</p>
+          <p class="count">76 elan</p>
+          <img src="assets/img/Categories/Self_Development.jpg" alt="">
+        </a>
+      </div>
+    </section>
+
+
+    <script>
+      $(document).ready(function () {
+
+        $('.category img').each(function () {
+          var width = $(this).width();
+          $(this).height((width / 16) * 9);
+        });
+      });
+    </script>
+    <script src="./assets/js/Scroll.js"></script>
+  </body>
+</html>

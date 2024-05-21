@@ -64,6 +64,7 @@ body {
     flex-direction: column;
     position: sticky;
     top: 0;
+    z-index: 5;
   }
   header #top-header {
     background-color: #262626;
@@ -182,6 +183,226 @@ body {
     display: none;
   }
 }
+@media only screen and (min-width: 600px) {
+  #advantages {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media only screen and (min-width: 600px) and (min-width: 1500px) {
+  #advantages {
+    padding: 20px 12vw;
+  }
+}
+@media only screen and (min-width: 600px) and (min-width: 600px) and (max-width: 1499px) {
+  #advantages {
+    padding: 20px 5vw;
+  }
+}
+@media only screen and (min-width: 600px) {
+  #advantages h2 {
+    margin: 50px 0;
+    color: #333333;
+  }
+  #advantages .advantage {
+    display: grid;
+    grid-template-columns: 2fr 5fr;
+    -moz-column-gap: 100px;
+         column-gap: 100px;
+    width: 100%;
+    opacity: 0;
+    transform: translateX(200px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  #advantages .advantage .image {
+    position: relative;
+  }
+  #advantages .advantage .image img {
+    border-radius: 25px;
+    width: 100%;
+  }
+  #advantages .advantage .image #certificate {
+    position: absolute;
+    right: -50px;
+    bottom: 150px;
+    background-color: #fff;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    width: 150px;
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.3);
+  }
+  #advantages .advantage .image #certificate i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 24px;
+    color: #1450e8;
+    background-color: #ddffff;
+  }
+  #advantages .advantage .image #certificate p {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    text-align: left;
+    margin: 0;
+    text-align: center;
+  }
+  #advantages .advantage .image #certificate p span {
+    color: #1450e8;
+  }
+  #advantages .advantage .details {
+    display: flex;
+    flex-direction: column;
+  }
+  #advantages .advantage .details h3 {
+    color: #333333;
+    font-size: 48px;
+    width: 800px;
+  }
+  #advantages .advantage .details ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  #advantages .advantage .details ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px 0;
+  }
+  #advantages .advantage .details ul li i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #1450e8;
+    background-color: #ddffff;
+  }
+  #advantages .advantage .details ul li p {
+    font-size: 18px;
+    text-align: left;
+    margin: 0;
+    margin-left: 10px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #advantages {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  #advantages h2 {
+    margin: 20px 0;
+  }
+  #advantages .advantage {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    opacity: 0;
+    transition: opacity 0.5s ease, transform 0.5s ease;
+    transform: translateY(200px);
+  }
+  #advantages .advantage .details {
+    display: flex;
+    flex-direction: column;
+  }
+  #advantages .advantage .details h3 {
+    color: #333333;
+    font-size: 32px;
+    margin-top: 20px;
+  }
+  #advantages .advantage .details ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  #advantages .advantage .details ul li {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px 0;
+  }
+  #advantages .advantage .details ul li i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #1450e8;
+    background-color: #ddffff;
+  }
+  #advantages .advantage .details ul li p {
+    font-size: 18px;
+    text-align: left;
+    margin: 0;
+    margin-left: 10px;
+  }
+  #advantages .advantage .image {
+    position: relative;
+  }
+  #advantages .advantage .image img {
+    border-radius: 25px;
+    width: 100%;
+  }
+  #advantages .advantage .image #certificate {
+    position: absolute;
+    right: -10px;
+    bottom: 20px;
+    background-color: #fff;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    width: 120px;
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.3);
+  }
+  #advantages .advantage .image #certificate i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 18px;
+    color: #1450e8;
+    background-color: #ddffff;
+  }
+  #advantages .advantage .image #certificate p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 36px;
+    text-align: left;
+    margin: 0;
+    text-align: center;
+  }
+  #advantages .advantage .image #certificate p span {
+    color: #1450e8;
+  }
+}
+.show {
+  opacity: 1 !important;
+  transform: translateX(0) !important;
+}
+
 @media only screen and (min-width: 600px) {
   #comments .slogan-slider {
     display: grid;
@@ -454,5 +675,70 @@ body {
     margin-left: 12px;
     font-weight: 500;
     color: #030303;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .announcessection #announce-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+  }
+  .announcessection #announce-list .announce {
+    width: 100%;
+    background: linear-gradient(90deg, #fff, #fff), linear-gradient(90deg, #1450e8, #c30dfa);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    padding: 16px;
+    transition: transform 0.4s ease;
+    cursor: pointer;
+    text-decoration: none;
+  }
+  .announcessection #announce-list .announce img {
+    border-radius: 10px;
+    width: 100%;
+  }
+  .announcessection #announce-list .announce p.title {
+    margin: 10px 0;
+    font-weight: 500;
+    font-size: 18px;
+    color: #030303;
+  }
+  .announcessection #announce-list .announce p.category {
+    font-size: 16px;
+    margin-bottom: 6px;
+    color: #62717c;
+  }
+  .announcessection #announce-list .announce .rating {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  .announcessection #announce-list .announce .rating p {
+    margin: 0;
+    margin-left: 6px;
+    color: #030303;
+  }
+  .announcessection #announce-list .announce .rating i {
+    color: #1450e8;
+  }
+  .announcessection #announce-list .announce .price {
+    display: flex;
+    flex-direction: row;
+  }
+  .announcessection #announce-list .announce .price p {
+    color: #1450e8;
+    font-weight: 600;
+    font-size: 22px;
+    margin: 0;
+  }
+  .announcessection #announce-list .announce:hover {
+    transform: scale(106%);
+  }
+  #vip-announces .announce {
+    background: linear-gradient(90deg, #fff, #fff), linear-gradient(90deg, #1450e8, #c30dfa);
+    background-clip: padding-box, border-box;
+    background-origin: padding-box, border-box;
   }
 }/*# sourceMappingURL=home.css.map */

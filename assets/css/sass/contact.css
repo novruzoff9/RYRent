@@ -2,6 +2,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+body {
+  overflow-x: hidden !important;
+}
+
 section {
   display: flex;
   flex-direction: column;

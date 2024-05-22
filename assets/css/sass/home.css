@@ -2,6 +2,10 @@
   font-family: "Poppins", sans-serif;
 }
 
+body {
+  overflow-x: hidden !important;
+}
+
 section {
   display: flex;
   flex-direction: column;
@@ -62,6 +66,7 @@ body {
   header {
     display: flex;
     flex-direction: column;
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     z-index: 5;
@@ -89,6 +94,8 @@ body {
     text-decoration: none;
     font-weight: 500;
   }
+}
+@media only screen and (min-width: 600px) {
   header #top-header #top-right-header {
     display: flex;
     flex-direction: row;
@@ -112,6 +119,8 @@ body {
     gap: 10px;
     font-size: 18px;
   }
+}
+@media only screen and (min-width: 600px) {
   header #bottom-header {
     background-color: #fff;
     display: flex;
@@ -159,6 +168,8 @@ body {
   header #bottom-header ul li:hover::after {
     width: 100%;
   }
+}
+@media only screen and (min-width: 600px) {
   header #bottom-header a#addnewsell {
     text-decoration: none;
     padding: 8px 16px;
@@ -184,9 +195,300 @@ body {
   }
 }
 @media only screen and (min-width: 600px) {
+  #home {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    margin-top: 0;
+  }
+}
+@media only screen and (min-width: 600px) and (min-width: 1500px) {
+  #home {
+    padding: 50px 12vw;
+  }
+}
+@media only screen and (min-width: 600px) and (min-width: 600px) and (max-width: 1499px) {
+  #home {
+    padding: 50px 5vw;
+  }
+}
+@media only screen and (min-width: 600px) {
+  #home #welcome {
+    background-color: #fff;
+    height: 75vh;
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    padding: 20px 0 20px 60px;
+    border-radius: 50px;
+  }
+  #home #welcome #slogan-sign {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #home #welcome #slogan-sign p {
+    max-width: 589px;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 90px;
+    text-align: left;
+  }
+  #home #welcome #slogan-sign p span {
+    color: #1450e8;
+  }
+  #home #welcome #slogan-sign a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 60px;
+    padding: 14px 28px;
+    gap: 10px;
+    border-radius: 5px;
+    background-color: #1450e8;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 20px;
+    text-decoration: none;
+  }
+  #home #welcome #image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  #home #welcome #image img {
+    width: 80%;
+    border-radius: 25px;
+  }
+  #home #welcome #image #student-count {
+    position: absolute;
+    right: 30px;
+    bottom: 150px;
+    background-color: #fff;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+  #home #welcome #image #student-count i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #1450e8;
+    background-color: #ddffff;
+  }
+  #home #welcome #image #student-count p.count {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 36px;
+    text-align: left;
+    color: #1450e8;
+    margin: 0;
+  }
+  #home #welcome #image #student-count p.student {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: center;
+    margin: 0;
+  }
+  #home #welcome #image #teachers {
+    position: absolute;
+    left: 0;
+    bottom: 250px;
+    background-color: #fff;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    width: 180px;
+  }
+  #home #welcome #image #teachers p {
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 30px;
+    text-align: center;
+    margin: 0;
+  }
+  #home #welcome #image #teachers p span {
+    color: #1450e8;
+  }
+}
+@media only screen and (min-width: 600px) {
+  #home #counts {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    padding: 0 100px;
+    margin-top: 30px;
+  }
+  #home #counts .stat {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+    flex: 1;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background-color: #ddffff;
+  }
+  #home #counts .stat i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #09b451;
+    font-size: 20px;
+    background-color: #1450e8;
+    color: white;
+  }
+  #home #counts .stat p {
+    font-size: 18px;
+    margin: 0;
+    margin-left: 10px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #home {
+    display: flex;
+    flex-direction: column;
+    height: calc(100vh - 60px);
+    padding: 20px;
+    margin-top: 60px;
+  }
+  #home #welcome {
+    display: flex;
+    flex-direction: column;
+  }
+  #home #welcome #slogan-sign {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  #home #welcome #slogan-sign p {
+    max-width: 589px;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: left;
+  }
+  #home #welcome #slogan-sign p span {
+    color: #09b451;
+  }
+  #home #welcome #image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 30px;
+  }
+  #home #welcome #image img {
+    width: 80%;
+    border-radius: 25px;
+  }
+  #home #welcome #image #student-count {
+    position: absolute;
+    right: 0;
+    bottom: 40px;
+    background-color: #fff;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+  }
+  #home #welcome #image #student-count i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #09b451;
+    background-color: #EEF2F6;
+  }
+  #home #welcome #image #student-count p.count {
+    font-size: 20px;
+    font-weight: 500;
+    text-align: left;
+    color: #09b451;
+    margin: 0;
+  }
+  #home #welcome #image #student-count p.student {
+    font-size: 10px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: center;
+    margin: 0;
+  }
+  #home #welcome #image #teachers {
+    position: absolute;
+    left: 0;
+    bottom: 120px;
+    background-color: #fff;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    width: 140px;
+  }
+  #home #welcome #image #teachers p {
+    font-size: 10px;
+    font-weight: 500;
+    text-align: center;
+    margin: 0;
+  }
+  #home #welcome #image #teachers p span {
+    color: #09b451;
+  }
+  #home #counts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+    margin-top: 30px;
+    gap: 20px;
+  }
+  #home #counts .stat {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 12px;
+    border-radius: 8px;
+    background-color: #ddffff;
+  }
+  #home #counts .stat i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px !important;
+    height: 30px;
+    border-radius: 50%;
+    font-size: 16px;
+    background-color: #09b451;
+    color: white;
+  }
+  #home #counts .stat p {
+    width: calc(100% - 40px);
+    font-size: 14px;
+    margin: 0;
+    margin-left: 6px;
+  }
+}
+@media only screen and (min-width: 600px) {
   #advantages {
     width: 100%;
-    display: flex;
     flex-direction: column;
     align-items: center;
   }
@@ -206,6 +508,8 @@ body {
     margin: 50px 0;
     color: #333333;
   }
+}
+@media only screen and (min-width: 600px) {
   #advantages .advantage {
     display: grid;
     grid-template-columns: 2fr 5fr;
@@ -457,6 +761,7 @@ body {
     width: 500px;
   }
   #comments .slogan-slider .slider .comment.active {
+    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     opacity: 1;
@@ -561,6 +866,7 @@ body {
     width: 500px;
   }
   #comments .slogan-slider .slider .comment.active {
+    height: -webkit-fit-content;
     height: -moz-fit-content;
     height: fit-content;
     opacity: 1;

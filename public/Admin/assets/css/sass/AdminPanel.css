@@ -63,7 +63,7 @@ section h5 {
     text-decoration: none;
   }
   aside ul li a p,
-aside ul li a i {
+  aside ul li a i {
     margin: 0;
     font-size: 22px;
     color: #fff;
@@ -183,7 +183,6 @@ aside ul li a i {
     display: none;
     -webkit-user-select: none;
        -moz-user-select: none;
-        -ms-user-select: none;
             user-select: none;
   }
   header #notficiations-menu .header {
@@ -276,7 +275,6 @@ aside ul li a i {
     display: none;
     -webkit-user-select: none;
        -moz-user-select: none;
-        -ms-user-select: none;
             user-select: none;
   }
   header #profile-menu .header {

@@ -395,4 +395,155 @@ body {
     background-clip: padding-box, border-box;
     background-origin: padding-box, border-box;
   }
+}
+@media only screen and (min-width: 600px) {
+  #categories #categories-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+  }
+  #categories #categories-list .category {
+    padding: 12px;
+    border-radius: 20px;
+    background-color: #fff;
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: all 0.4s ease;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  #categories #categories-list .category p.title {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+    color: #030303;
+  }
+  #categories #categories-list .category p.caption {
+    color: #62717c;
+    margin: 4px 0 0 0;
+    font-size: 16px;
+  }
+  #categories #categories-list .category p.count {
+    color: #1450e8;
+    margin: 4px 0 8px 0;
+  }
+  #categories #categories-list .category img {
+    width: 100%;
+    border-radius: 8px;
+  }
+  #categories #categories-list .category:hover {
+    transform: scale(106%);
+  }
+  #search-announce {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+  }
+}
+@media only screen and (min-width: 600px) and (min-width: 1500px) {
+  #search-announce {
+    padding: 20px 12vw;
+  }
+}
+@media only screen and (min-width: 600px) and (min-width: 600px) and (max-width: 1499px) {
+  #search-announce {
+    padding: 20px 5vw;
+  }
+}
+@media only screen and (min-width: 600px) {
+  #search-announce h4 {
+    font-weight: 400;
+    font-size: 20px;
+  }
+  #search-announce form {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 10px;
+  }
+  #search-announce form input[type=text] {
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: 8px;
+  }
+  #search-announce form input[type=submit] {
+    background-color: #1450e8;
+    padding: 6px 12px;
+    border-radius: 8px;
+    color: #fff;
+    border: none;
+    outline: none;
+  }
+  #pagedlist {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 200px;
+  }
+  #pagedlist p, #pagedlist i {
+    margin: 0;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 6px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  #pagedlist p:hover {
+    background-color: #ccc;
+  }
+  #pagedlist i, #pagedlist p.active {
+    background-color: #1450e8;
+    color: white;
+  }
+}
+@media only screen and (max-width: 600px) {
+  #categories {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    width: 100%;
+    margin: 50px 0;
+    padding: 20px;
+  }
+  #categories .category {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 12px;
+    box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 10px 10px 20px 0px rgba(0, 0, 0, 0.3);
+    text-decoration: none;
+  }
+  #categories .category i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-size: 18px;
+    color: #09b451;
+    background-color: #EEF2F6;
+  }
+  #categories .category p {
+    margin: 0;
+    margin-left: 12px;
+    font-weight: 500;
+    color: #030303;
+  }
 }/*# sourceMappingURL=product.css.map */

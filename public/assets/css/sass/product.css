@@ -38,7 +38,7 @@ section h5 {
 .getstart-btn {
   padding: 8px 16px;
   font-weight: 500;
-  background-color: #1450e8;
+  background-color: #6237a0;
   outline: none;
   border: none;
   color: white;
@@ -105,7 +105,7 @@ body {
     color: white;
   }
   header #top-header #top-right-header a {
-    background-color: #1450e8;
+    background-color: #6237a0;
     color: white;
     padding: 6px 16px;
     text-decoration: none;
@@ -154,11 +154,11 @@ body {
     content: "";
     height: 2px;
     width: 0px;
-    background-color: #1450e8;
+    background-color: #6237a0;
     transition: width 0.3s ease;
   }
   header #bottom-header ul li:hover a {
-    color: #1450e8;
+    color: #6237a0;
   }
   header #bottom-header ul li:hover::after {
     width: 100%;
@@ -233,7 +233,7 @@ body {
     font-size: 18px;
   }
   #ProductInfo #productdetails .rating i {
-    color: #1450e8;
+    color: #6237a0;
   }
   #ProductInfo #productdetails .price {
     display: flex;
@@ -241,7 +241,7 @@ body {
     margin-top: 20px;
   }
   #ProductInfo #productdetails .price p {
-    color: #1450e8;
+    color: #6237a0;
     font-weight: 600;
     font-size: 24px;
     margin: 0;
@@ -255,7 +255,7 @@ body {
   }
   #ProductInfo #productdetails .buttons #tobasket {
     flex: 3;
-    background-color: #1450e8;
+    background-color: #6237a0;
     color: #fff;
     border: none;
     outline: none;
@@ -265,7 +265,7 @@ body {
   }
   #ProductInfo #productdetails .buttons #tofavorites {
     flex: 3;
-    background-color: #c30dfa;
+    background-color: #1450e8;
     color: #fff;
     border: none;
     outline: none;
@@ -324,7 +324,7 @@ body {
     font-size: 18px;
   }
   #comments .comment .writer-comment .rating i.filled {
-    color: #1450e8;
+    color: #6237a0;
   }
   #comments .comment .writer-comment p.date {
     text-align: end;
@@ -339,7 +339,7 @@ body {
   }
   .announcessection #announce-list .announce {
     width: 100%;
-    background: linear-gradient(90deg, #fff, #fff), linear-gradient(90deg, #1450e8, #c30dfa);
+    background: linear-gradient(90deg, #fff, #fff), linear-gradient(90deg, #6237a0, #1450e8);
     background-clip: padding-box, border-box;
     background-origin: padding-box, border-box;
     border: 2px solid transparent;
@@ -375,14 +375,14 @@ body {
     color: #030303;
   }
   .announcessection #announce-list .announce .rating i {
-    color: #1450e8;
+    color: #6237a0;
   }
   .announcessection #announce-list .announce .price {
     display: flex;
     flex-direction: row;
   }
   .announcessection #announce-list .announce .price p {
-    color: #1450e8;
+    color: #6237a0;
     font-weight: 600;
     font-size: 22px;
     margin: 0;
@@ -391,7 +391,7 @@ body {
     transform: scale(106%);
   }
   #vip-announces .announce {
-    background: linear-gradient(90deg, #fff, #fff), linear-gradient(90deg, #1450e8, #c30dfa);
+    background: linear-gradient(90deg, #fff, #fff), linear-gradient(90deg, #6237a0, #1450e8);
     background-clip: padding-box, border-box;
     background-origin: padding-box, border-box;
   }
@@ -428,7 +428,7 @@ body {
     font-size: 16px;
   }
   #categories #categories-list .category p.count {
-    color: #1450e8;
+    color: #6237a0;
     margin: 4px 0 8px 0;
   }
   #categories #categories-list .category img {
@@ -473,7 +473,7 @@ body {
     border-radius: 8px;
   }
   #search-announce form input[type=submit] {
-    background-color: #1450e8;
+    background-color: #6237a0;
     padding: 6px 12px;
     border-radius: 8px;
     color: #fff;
@@ -504,7 +504,7 @@ body {
     background-color: #ccc;
   }
   #pagedlist i, #pagedlist p.active {
-    background-color: #1450e8;
+    background-color: #6237a0;
     color: white;
   }
 }

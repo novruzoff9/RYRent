@@ -38,7 +38,7 @@ section h5 {
 .getstart-btn {
   padding: 8px 16px;
   font-weight: 500;
-  background-color: #1450e8;
+  background-color: #6237a0;
   outline: none;
   border: none;
   color: white;
@@ -105,7 +105,7 @@ body {
     color: white;
   }
   header #top-header #top-right-header a {
-    background-color: #1450e8;
+    background-color: #6237a0;
     color: white;
     padding: 6px 16px;
     text-decoration: none;
@@ -154,11 +154,11 @@ body {
     content: "";
     height: 2px;
     width: 0px;
-    background-color: #1450e8;
+    background-color: #6237a0;
     transition: width 0.3s ease;
   }
   header #bottom-header ul li:hover a {
-    color: #1450e8;
+    color: #6237a0;
   }
   header #bottom-header ul li:hover::after {
     width: 100%;
@@ -227,7 +227,7 @@ body {
     text-align: left;
   }
   #home #welcome #slogan-sign p span {
-    color: #1450e8;
+    color: #6237a0;
   }
   #home #welcome #slogan-sign a {
     display: flex;
@@ -238,7 +238,7 @@ body {
     padding: 14px 28px;
     gap: 10px;
     border-radius: 5px;
-    background-color: #1450e8;
+    background-color: #6237a0;
     color: white;
     font-size: 16px;
     font-weight: 500;
@@ -273,15 +273,15 @@ body {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    color: #1450e8;
-    background-color: #ddffff;
+    color: #6237a0;
+    background-color: #f0e6ff;
   }
   #home #welcome #image #student-count p.count {
     font-size: 24px;
     font-weight: 500;
     line-height: 36px;
     text-align: left;
-    color: #1450e8;
+    color: #6237a0;
     margin: 0;
   }
   #home #welcome #image #student-count p.student {
@@ -311,7 +311,7 @@ body {
     margin: 0;
   }
   #home #welcome #image #teachers p span {
-    color: #1450e8;
+    color: #6237a0;
   }
   #home #counts {
     display: flex;
@@ -330,7 +330,7 @@ body {
     flex: 1;
     padding: 8px 12px;
     border-radius: 8px;
-    background-color: #ddffff;
+    background-color: #f0e6ff;
   }
   #home #counts .stat i {
     display: flex;
@@ -341,7 +341,7 @@ body {
     border-radius: 50%;
     color: #09b451;
     font-size: 20px;
-    background-color: #1450e8;
+    background-color: #6237a0;
     color: white;
   }
   #home #counts .stat p {
@@ -457,7 +457,7 @@ body {
     align-items: center;
     padding: 8px 12px;
     border-radius: 8px;
-    background-color: #ddffff;
+    background-color: #f0e6ff;
   }
   #home #counts .stat i {
     display: flex;
@@ -539,8 +539,8 @@ body {
     height: 50px;
     border-radius: 50%;
     font-size: 24px;
-    color: #1450e8;
-    background-color: #ddffff;
+    color: #6237a0;
+    background-color: #f0e6ff;
   }
   #advantages .advantage .image #certificate p {
     font-size: 24px;
@@ -551,7 +551,7 @@ body {
     text-align: center;
   }
   #advantages .advantage .image #certificate p span {
-    color: #1450e8;
+    color: #6237a0;
   }
   #advantages .advantage .details {
     display: flex;
@@ -580,8 +580,8 @@ body {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    color: #1450e8;
-    background-color: #ddffff;
+    color: #6237a0;
+    background-color: #f0e6ff;
   }
   #advantages .advantage .details ul li p {
     font-size: 18px;
@@ -637,8 +637,8 @@ body {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    color: #1450e8;
-    background-color: #ddffff;
+    color: #6237a0;
+    background-color: #f0e6ff;
   }
   #advantages .advantage .details ul li p {
     font-size: 18px;
@@ -676,8 +676,8 @@ body {
     height: 40px;
     border-radius: 50%;
     font-size: 18px;
-    color: #1450e8;
-    background-color: #ddffff;
+    color: #6237a0;
+    background-color: #f0e6ff;
   }
   #advantages .advantage .image #certificate p {
     font-size: 18px;
@@ -688,7 +688,7 @@ body {
     text-align: center;
   }
   #advantages .advantage .image #certificate p span {
-    color: #1450e8;
+    color: #6237a0;
   }
 }
 .show {
@@ -708,7 +708,7 @@ body {
     font-weight: 500;
   }
   #comments .slogan-slider .slogan p span {
-    color: #1450e8;
+    color: #6237a0;
   }
   #comments .slogan-slider .slogan .navigation {
     width: 150px;
@@ -721,10 +721,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #1450e8;
+    color: #6237a0;
     width: 60px;
     height: 60px;
-    border: 1px solid #1450e8;
+    border: 1px solid #6237a0;
     border-radius: 50%;
     cursor: pointer;
   }
@@ -744,7 +744,7 @@ body {
     transform: translateX(210%);
   }
   #comments .slogan-slider .slider .comment p.writer {
-    color: #1450e8;
+    color: #6237a0;
     font-weight: 500;
     font-size: 20px;
     width: 500px;
@@ -810,7 +810,7 @@ body {
     font-weight: 500;
   }
   #comments .slogan-slider .slogan p span {
-    color: #1450e8;
+    color: #6237a0;
   }
   #comments .slogan-slider .slogan .navigation {
     flex: 1;
@@ -824,10 +824,10 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    color: #1450e8;
+    color: #6237a0;
     width: 40px;
     height: 40px;
-    border: 1px solid #1450e8;
+    border: 1px solid #6237a0;
     border-radius: 50%;
     cursor: pointer;
   }
@@ -848,7 +848,7 @@ body {
     transform: translateX(210%);
   }
   #comments .slogan-slider .slider .comment p.writer {
-    color: #1450e8;
+    color: #6237a0;
     font-weight: 500;
     font-size: 20px;
     width: 500px;
@@ -920,7 +920,7 @@ body {
     font-size: 16px;
   }
   #categories #categories-list .category p.count {
-    color: #1450e8;
+    color: #6237a0;
     margin: 4px 0 8px 0;
   }
   #categories #categories-list .category img {
@@ -965,7 +965,7 @@ body {
     border-radius: 8px;
   }
   #search-announce form input[type=submit] {
-    background-color: #1450e8;
+    background-color: #6237a0;
     padding: 6px 12px;
     border-radius: 8px;
     color: #fff;
@@ -996,7 +996,7 @@ body {
     background-color: #ccc;
   }
   #pagedlist i, #pagedlist p.active {
-    background-color: #1450e8;
+    background-color: #6237a0;
     color: white;
   }
 }
@@ -1047,7 +1047,7 @@ body {
   }
   .announcessection #announce-list .announce {
     width: 100%;
-    background: linear-gradient(90deg, #fff, #fff), linear-gradient(90deg, #1450e8, #c30dfa);
+    background: linear-gradient(90deg, #fff, #fff), linear-gradient(90deg, #6237a0, #1450e8);
     background-clip: padding-box, border-box;
     background-origin: padding-box, border-box;
     border: 2px solid transparent;
@@ -1083,14 +1083,14 @@ body {
     color: #030303;
   }
   .announcessection #announce-list .announce .rating i {
-    color: #1450e8;
+    color: #6237a0;
   }
   .announcessection #announce-list .announce .price {
     display: flex;
     flex-direction: row;
   }
   .announcessection #announce-list .announce .price p {
-    color: #1450e8;
+    color: #6237a0;
     font-weight: 600;
     font-size: 22px;
     margin: 0;
@@ -1099,7 +1099,7 @@ body {
     transform: scale(106%);
   }
   #vip-announces .announce {
-    background: linear-gradient(90deg, #fff, #fff), linear-gradient(90deg, #1450e8, #c30dfa);
+    background: linear-gradient(90deg, #fff, #fff), linear-gradient(90deg, #6237a0, #1450e8);
     background-clip: padding-box, border-box;
     background-origin: padding-box, border-box;
   }

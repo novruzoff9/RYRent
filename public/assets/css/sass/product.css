@@ -93,6 +93,43 @@ body {
     text-decoration: none;
     font-weight: 500;
   }
+  header #top-header #top-left-header a img {
+    width: 60px;
+  }
+  header #top-header #top-center-header {
+    display: flex;
+    align-items: center;
+  }
+  header #top-header #top-center-header ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 25px;
+    width: 100%;
+    justify-content: space-evenly;
+    margin: 0;
+    padding: 0;
+  }
+  header #top-header #top-center-header ul li a {
+    text-decoration: none;
+    color: #fff;
+    cursor: pointer;
+  }
+  header #top-header #top-center-header ul li::after {
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0px;
+    background-color: #6237a0;
+    transition: width 0.3s ease;
+  }
+  header #top-header #top-center-header ul li:hover a {
+    color: #6237a0;
+  }
+  header #top-header #top-center-header ul li:hover::after {
+    width: 100%;
+  }
   header #top-header #top-right-header {
     display: flex;
     flex-direction: row;
@@ -104,10 +141,22 @@ body {
     cursor: pointer;
     color: white;
   }
-  header #top-header #top-right-header a {
+  header #top-header #top-right-header a#addnewsell {
+    text-decoration: none;
+    padding: 8px 16px;
+    background-color: #09b451;
+    border-radius: 8px;
+    color: white;
+    display: flex;
+    align-items: center;
+  }
+  header #top-header #top-right-header a#addnewsell i {
+    font-size: 20px;
+  }
+  header #top-header #top-right-header a#login {
     background-color: #6237a0;
     color: white;
-    padding: 6px 16px;
+    padding: 8px 16px;
     text-decoration: none;
     border-radius: 8px;
     display: flex;
@@ -391,7 +440,7 @@ body {
     transform: scale(106%);
   }
   #vip-announces .announce {
-    background: linear-gradient(90deg, #fff, #fff), linear-gradient(90deg, #6237a0, #1450e8);
+    background: linear-gradient(90deg, #fff, #fff), linear-gradient(90deg, #6237a0, #f0e6ff);
     background-clip: padding-box, border-box;
     background-origin: padding-box, border-box;
   }

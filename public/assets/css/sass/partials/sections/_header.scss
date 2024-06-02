@@ -16,6 +16,47 @@
           font-size: 24px;
           text-decoration: none;
           font-weight: 500;
+          img{
+            width: 60px;
+          }
+        }
+      }
+      #top-center-header{
+        display: flex;
+        align-items: center;
+        ul{
+          list-style: none;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          gap: 25px;
+          width: 100%;
+          justify-content: space-evenly;
+          margin: 0;
+          padding: 0;
+          li{
+            a{
+              text-decoration: none;
+              color: #fff;
+              cursor: pointer;
+            }
+            &::after {
+              display: block;
+              content: "";
+              height: 2px;
+              width: 0px;
+              background-color: $primary-color;
+              transition: width .3s ease;
+            }
+            &:hover {
+              a{
+                color: $primary-color;
+              }
+              &::after{
+                width: 100%;
+              }
+            }
+          }
         }
       }
       #top-right-header {
@@ -28,10 +69,22 @@
           cursor: pointer;
           color: white;
         }
-        a {
+        a#addnewsell{
+          text-decoration: none;
+          padding: 8px 16px;
+          background-color: $green;
+          border-radius: 8px;
+          color: white;
+          display: flex;
+          align-items: center;
+          i{
+            font-size: 20px;
+          }
+        }
+        a#login {
           background-color: $primary-color;
           color: white;
-          padding: 6px 16px;
+          padding: 8px 16px;
           text-decoration: none;
           border-radius: 8px;
           display: flex;

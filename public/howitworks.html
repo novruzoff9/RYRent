@@ -39,39 +39,40 @@
     <header>
       <div id="top-header">
         <div id="top-left-header">
-          <a href="./index.html">RY Rent</a>
+          <a href="./index.html">
+            <img src="./Images/Logo-removebg.png" alt="" />
+          </a>
+        </div>
+        <div id="top-center-header">
+          <ul>
+            <li>
+              <a href="./allproducts.html">Bütün elanlar</a>
+            </li>
+            <li>
+              <a href="#">Sandal brendi</a>
+            </li>
+            <li>
+              <a href="#">Tərəfdaşlar</a>
+            </li>
+            <li>
+              <a href="./howitworks.html">Qaydalar</a>
+            </li>
+            <li>
+              <a href="./faq.html">Tez-Tez soruşulanlar</a>
+            </li>
+          </ul>
         </div>
         <div id="top-right-header">
           <i class="far fa-heart"></i>
           <i class="far fa-bell"></i>
-          <a href="login.html">Daxil ol <i class="fas fa-sign-in-alt"></i></a>
+          <a id="addnewsell" href="login.html"
+            >Yeni elan &nbsp;<i class="fas fa-plus"></i
+          ></a>
+          <a id="login" href="login.html"
+            >Daxil ol <i class="fas fa-sign-in-alt"></i
+          ></a>
           <i class="far fa-sun"></i>
         </div>
-      </div>
-      <div id="bottom-header">
-        <ul>
-          <li>
-            <a href="./allproducts.html">Bütün elanlar</a>
-          </li>
-          <li>
-            <a href="#">Satıcılar</a>
-          </li>
-          <li>
-            <a href="#">Kateqoriyalar</a>
-          </li>
-          <li>
-            <a href="#">Tərəfdaşlar</a>
-          </li>
-          <li>
-            <a href="#">Qaydalar</a>
-          </li>
-          <li>
-            <a href="./faq.html">Tez-Tez soruşulanlar</a>
-          </li>
-        </ul>
-        <a id="addnewsell" href="#">
-          Yeni elan &nbsp;<i class="fas fa-plus"></i
-        ></a>
       </div>
     </header>
 
@@ -169,7 +170,10 @@
           <div class="info-box">
             <div class="date-cap">
               <div class="date">Geri qaytarma</div>
-              <div class="caption">Məhsulun sizdə qalma müddətini uzatmadığınız halda məhsul gəlib sizdən alınır.</div>
+              <div class="caption">
+                Məhsulun sizdə qalma müddətini uzatmadığınız halda məhsul gəlib
+                sizdən alınır.
+              </div>
             </div>
             <i class="fas fa-chalkboard-teacher"></i>
           </div>
@@ -179,7 +183,9 @@
           <div class="info-box">
             <div class="date-cap">
               <div class="date">Bizi dəyərləndirirsiniz</div>
-              <div class="caption">Day bu qıdır şey eliyiriy girib bidənə comment zad atarsız da</div>
+              <div class="caption">
+                Day bu qıdır şey eliyiriy girib bidənə comment zad atarsız da
+              </div>
             </div>
             <i class="fas fa-users"></i>
           </div>
@@ -187,6 +193,43 @@
       </article>
     </section>
 
+    <section id="agreements">
+      <h2 class="header-title">Müqavilələr</h2>
+      <h5>
+        Siz məhsulunuzu bizə verməklə, və ya bizdən məhsul icarələməklə
+        aşağıdakı müqavilələri qəbul etmiş olursunuz
+      </h5>
+      <div id="agreement-list">
+        <a href="#" class="agreement">
+          <p class="content">Sizin hər cürə məlumatınız zadınız yaşayışınız bizimlə gizli qalır qəti narahat olmutyun</p>
+          <div class="cover">
+            <i class="fas fa-file-signature"></i>
+            <p>Gizlilik müqaviləsi</p>
+          </div>
+        </a>
+        <a href="#" class="agreement">
+          <p class="content">Qaqas bilisen nece. Pul qazanisansa pul vermelisen. heyatda her seyin oz qayda qanunu var</p>
+          <div class="cover">
+            <i class="fas fa-file-signature"></i>
+            <p>Vergi müqaviləsi</p>
+          </div>
+        </a>
+        <a href="#" class="agreement">
+          <p class="content">Indi bura da nese yazarig da. Bos qalmasin deye. Xetri qalar sora</p>
+          <div class="cover">
+            <i class="fas fa-file-signature"></i>
+            <p>Nəbilim nəsə müqaviləsi</p>
+          </div>
+        </a>
+        <a href="#" class="agreement">
+          <p class="content">Kimse menim miki mausumun cestine askarmit eliyer. denq denq dedenqqqq</p>
+          <div class="cover">
+            <i class="fas fa-file-signature"></i>
+            <p>Məsuliyyət müqaviləsi</p>
+          </div>
+        </a>
+      </div>
+    </section>
     <script>
       $(document).ready(function () {
         $(".line").height($("#rules>article").height());

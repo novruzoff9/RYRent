@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="en">
+
+<html lang="az">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,7 +8,7 @@
     <meta name="description" content="Sertifikatlı Alman dili hazırlığı" />
     <title>RY Rent</title>
     <link rel="icon" type="image/png" href="./assets/img/Flag.png" />
-    <link rel="stylesheet" href="./assets/css/sass/faq.css" />
+    <link rel="stylesheet" href="./assets/css/sass/about.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -33,6 +34,7 @@
     />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
+
   <body>
     <header>
       <div id="top-header">
@@ -74,68 +76,61 @@
       </div>
     </header>
 
-    <section id="questions">
-      <h2>Tez-tez soruşulan suallar</h2>
-      <div id="question-list">
-        <div class="question">
-            <div class="question-content">
-                <p>Necə kiraəyələyəcəyəm?</p>
-                <i class="fas fa-chevron-down"></i>
+    <section id="creators">
+      <h2>Yaradıcılar</h2>
+      <div id="creators-list">
+        <div class="card">
+          <div class="card-info">
+            <div class="card-avatar">
+              <img src="Images/Yusif_Ferecli.png" alt="" />
             </div>
-            <div class="answer">
-                <p>Ala qeydiyyatdan keçdün fso da</p>
-            </div>
+            <div class="card-title">Yusif Fərəcli</div>
+            <div class="card-subtitle">CEO &amp; Co-Founder</div>
+          </div>
+          <ul class="card-social">
+            <li class="card-social__item">
+              <a href="https://www.linkedin.com/in/yusif-farajli-87460424a/">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+            <li class="card-social__item">
+              <a href="https://www.instagram.com/faracliyusif/">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li class="card-social__item">
+              <i class="fab fa-linkedin"></i>
+            </li>
+          </ul>
         </div>
-        <div class="question">
-            <div class="question-content">
-                <p>Necə kiraəyələyəcəyəm?</p>
-                <i class="fas fa-chevron-down"></i>
+
+        <div class="card">
+          <div class="card-info">
+            <div class="card-avatar">
+              <img src="Images/Yagmur_Novruzov.png" alt="" />
             </div>
-            <div class="answer">
-                <p>Ala qeydiyyatdan keçdün fso da</p>
-            </div>
-        </div>
-        <div class="question">
-            <div class="question-content">
-                <p>Size nece guvenim?</p>
-                <i class="fas fa-chevron-down"></i>
-            </div>
-            <div class="answer">
-                <p>Pox yiyer oglan mennen qeyret sohbeti eliyer</p>
-            </div>
-        </div>
-        <div class="question">
-            <div class="question-content">
-                <p>Odenis nece olacag?</p>
-                <i class="fas fa-chevron-down"></i>
-            </div>
-            <div class="answer">
-                <p>Kartnandisa legv ele</p>
-            </div>
-        </div>
-        <div class="question">
-            <div class="question-content">
-                <p>Hansi zonalara catdirilir?</p>
-                <i class="fas fa-chevron-down"></i>
-            </div>
-            <div class="answer">
-                <p>Ozum Aran zonasinnanam</p>
-            </div>
+            <div class="card-title">Yağmur Novruzlu</div>
+            <div class="card-subtitle">CTO &amp; Co-Founder</div>
+          </div>
+          <ul class="card-social">
+            <li class="card-social__item">
+              <a href="https://www.linkedin.com/in/yaghmur-novruzlu-50779a21a/">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+            <li class="card-social__item">
+              <a href="https://www.instagram.com/novruzoff9/">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </li>
+            <li class="card-social__item">
+              <a href="https://github.com/novruzoff9">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+          </ul>
         </div>
       </div>
     </section>
-
-    <script>
-      $(document).ready(function () {
-        $(".announce img").each(function () {
-          var width = $(this).width();
-          $(this).height((width / 16) * 9);
-        });
-
-        $(".question-content").click(function(){
-            $(this).parent().toggleClass("show");
-        });
-      });
-    </script>
   </body>
 </html>

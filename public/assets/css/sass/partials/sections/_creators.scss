@@ -1,0 +1,111 @@
+@media only screen and (min-width: 600px) {
+  #creators {
+    #creators-list {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      .card {
+        width: 220px;
+        height: 254px;
+        background: #f5f5f5;
+        padding: 2rem 1.5rem;
+        transition: box-shadow 0.3s ease, transform 0.2s ease;
+        .card-info {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          transition: transform 0.2s ease, opacity 0.2s ease;
+          /*Image*/
+          .card-avatar {
+            --size: 70px;
+            background: linear-gradient(to top, #f1e1c1 0%, #fcbc97 100%);
+            width: var(--size);
+            height: var(--size);
+            border-radius: 50%;
+            transition: transform 0.2s ease;
+            margin-bottom: 1rem;
+            position: relative;
+            img {
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -45%);
+              transition: transform 0.2s ease;
+              width: 60px;
+            }
+          }
+          /*Text*/
+          .card-title {
+            color: #333;
+            font-size: 1.2em;
+            font-weight: 600;
+            line-height: 2rem;
+          }
+          .card-subtitle {
+            color: #859ba8;
+            font-size: 0.8em;
+          }
+        }
+        /*Card footer*/
+        .card-social {
+          transform: translateY(200%);
+          display: flex;
+          justify-content: space-around;
+          width: 100%;
+          opacity: 0;
+          transition: transform 0.2s ease, opacity 0.2s ease;
+          padding: 0;
+          .card-social__item {
+            list-style: none;
+            a {
+              text-decoration: none;
+            }
+            i {
+              display: block;
+              font-size: 22px;
+              color: #515f65;
+              cursor: pointer;
+              transition: fill 0.2s ease, transform 0.2s ease;
+            }
+          }
+        }
+        &:hover {
+          box-shadow: 0 8px 50px #23232333;
+          .card-info {
+            transform: translateY(-5%);
+            .card-avatar:hover {
+              transform: scale(1.1);
+            }
+          }
+          .card-social {
+            transform: translateY(100%);
+            opacity: 1;
+            .card-social__item i:hover {
+              transform: scale(1.1);
+              &.fa-linkedin {
+                color: #0077b5;
+              }
+              &.fa-github{
+                color: #010409;
+              }
+              &.fa-instagram {
+                background: linear-gradient(
+                  135deg,
+                  #405de6 0%,
+                  #5851db 31%,
+                  #833ab4 55%,
+                  #c13584 78%,
+                  #e1306c 100%
+                );
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

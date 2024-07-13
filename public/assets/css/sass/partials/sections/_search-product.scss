@@ -1,0 +1,58 @@
+@media only screen and (min-width: 600px) {
+  #search-announce {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include section-padding(20px);
+    margin-top: 60px;
+    h4 {
+      font-weight: 400;
+      font-size: 20px;
+    }
+    form {
+      display: grid;
+      grid-template-columns: 4fr 1fr;
+      gap: 10px;
+      input[type="text"] {
+        @include input();
+      }
+      input[type="submit"] {
+        @include action-button($primary-color);
+      }
+    }
+  }
+
+  #filter {
+    margin-top: 20px;
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    form {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr;
+      #ratingrange {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+        p {
+          margin: 0;
+        }
+        input {
+          @include input();
+        }
+      }
+      select {
+        @include input();
+      }
+      button {
+        @include action-button($primary-color);
+        grid-column-start: 1;
+        grid-column-end: 3;
+      }
+    }
+  }
+}

@@ -45,8 +45,8 @@
         </div>
         <div id="top-center-header">
           <ul>
-            <li>
-              <a href="./allproducts.html">Bütün elanlar</a>
+            <li id="allproductslink">
+              <a>Bütün elanlar</a>
             </li>
             <li>
               <a href="./about.html">Sandal brendi</a>
@@ -61,6 +61,24 @@
               <a href="./faq.html">Tez-Tez soruşulanlar</a>
             </li>
           </ul>
+          <div id="allproductsmegamenu">
+            <a href="./allproducts.html" class="category">
+              <i class="fas fa-home"></i>
+              <p>Ev Əşyaları</p>
+            </a>
+            <a href="./allproducts.html" class="category">
+              <i class="fas fa-book"></i>
+              <p>Kitab</p>
+            </a>
+            <a href="./allproducts.html" class="category">
+              <i class="fas fa-gamepad"></i>
+              <p>Oyun & Əyləncə</p>
+            </a>
+            <a href="./allproducts.html" class="category">
+              <i class="fas fa-guitar"></i>
+              <p>Vokal alətləri</p>
+            </a>
+          </div>
         </div>
         <div id="top-right-header">
           <i class="far fa-heart"></i>
@@ -79,8 +97,8 @@
     <section id="home">
       <div id="welcome">
         <div id="slogan-sign">
-          <p>Ehtiyyacin varsa <span>Kirayələ</span></p>
-          <a class="getstart-btn" href="./login.html">Kiraləməyə başla</a>
+          <p>Ehtiyyacin varsa <span>İcarələ</span></p>
+          <a class="getstart-btn" href="./login.html">İcarələməyə başla</a>
         </div>
         <div id="image">
           <img src="./assets/img/Courier.jpg" alt="" />
@@ -388,6 +406,17 @@
         </div>
       </div>
     </section>
+
+    <script>
+      $(document).ready(function(){
+        $("#allproductslink").mouseenter(function(){
+          $("#allproductsmegamenu").css("display", "flex");
+        });
+        $("header").mouseleave(function(){
+          $("#allproductsmegamenu").css("display", "none");
+        });
+      });
+    </script>
 
     <script>
       $(document).ready(function () {

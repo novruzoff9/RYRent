@@ -84,9 +84,31 @@
         <input type="text" placeholder="Məhsul axtar" />
         <input type="submit" value="Axtar" />
       </form>
+
+      <div id="filter">
+        <h2>Filterlər</h2>
+
+        <form action="#">
+          <label for="minrating">Reytinq aralığı</label>
+          <div id="ratingrange">
+            <input type="number" name="minrating" id="" max="4" min="0" value="0">
+            <p>-</p>
+            <input type="number" name="maxrating" id="" max="5" min="1" value="5">
+          </div>
+
+          <label for="sortby">Sıralama</label>
+          <select name="sortby" id="sortby">
+            <option value="bydate" selected>Tarixə görə</option>
+            <option value="byalpha">Əlifbaya görə</option>
+            <option value="byrating">Reytinqinə görə</option>
+          </select>
+
+          <button type="submit">Axtar</button>
+        </form>
+      </div>
     </div>
 
-    <section id="categories">
+    <!-- <section id="categories">
       <h2 class="header-title">Trend kateqoriyalar</h2>
       <h5>İstəyinizə uyğun kateqoriyanı seçin və icarələyin!</h5>
       <div id="categories-list">
@@ -115,7 +137,7 @@
           <img src="assets/img/Categories/Self_Development.jpg" alt="" />
         </a>
       </div>
-    </section>
+    </section> -->
 
     <section class="announcessection">
       <h2>Bütün elanlar</h2>

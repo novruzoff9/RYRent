@@ -1,5 +1,7 @@
 @media only screen and (min-width: 600px) {
   .announcessection {
+    margin-top: 0;
+    h2{ margin: 40px auto;}
     #announce-list {
       display: grid;
       grid-template-columns: 1fr 1fr 1fr 1fr;

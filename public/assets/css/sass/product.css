@@ -99,6 +99,7 @@ body {
   header #top-header #top-center-header {
     display: flex;
     align-items: center;
+    position: relative;
   }
   header #top-header #top-center-header ul {
     list-style: none;
@@ -129,6 +130,42 @@ body {
   }
   header #top-header #top-center-header ul li:hover::after {
     width: 100%;
+  }
+  header #top-header #top-center-header #allproductsmegamenu {
+    position: absolute;
+    top: 80px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border: 1px solid #262626;
+    display: none;
+  }
+  header #top-header #top-center-header #allproductsmegamenu .category {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #262626;
+    text-decoration: none;
+    margin: 4px 0;
+  }
+  header #top-header #top-center-header #allproductsmegamenu .category i {
+    width: 30px;
+    text-align: center;
+  }
+  header #top-header #top-center-header #allproductsmegamenu .category p {
+    margin: 0;
+    text-wrap: wrap;
+    word-wrap: break-word;
+    margin-left: 10px;
+    width: calc(100% - 40px);
+    font-size: 20px;
+    font-weight: 500;
+  }
+  header #top-header #top-center-header #allproductsmegamenu .category:hover {
+    color: #6237a0;
   }
   header #top-header #top-right-header {
     display: flex;
@@ -234,6 +271,93 @@ body {
 @media only screen and (min-width: 600px) {
   #mobile-navbar {
     display: none;
+  }
+}
+@media only screen and (min-width: 600px) {
+  #search-announce {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 60px;
+  }
+}
+@media only screen and (min-width: 600px) and (min-width: 1500px) {
+  #search-announce {
+    padding: 20px 12vw;
+  }
+}
+@media only screen and (min-width: 600px) and (min-width: 600px) and (max-width: 1499px) {
+  #search-announce {
+    padding: 20px 5vw;
+  }
+}
+@media only screen and (min-width: 600px) {
+  #search-announce h4 {
+    font-weight: 400;
+    font-size: 20px;
+  }
+  #search-announce form {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    gap: 10px;
+  }
+  #search-announce form input[type=text] {
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: 8px;
+  }
+  #search-announce form input[type=submit] {
+    background-color: #6237a0;
+    padding: 6px 12px;
+    border-radius: 8px;
+    color: #fff;
+    border: none;
+    outline: none;
+  }
+  #filter {
+    margin-top: 20px;
+  }
+  #filter h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  #filter form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+  #filter form #ratingrange {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+  }
+  #filter form #ratingrange p {
+    margin: 0;
+  }
+  #filter form #ratingrange input {
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: 8px;
+  }
+  #filter form select {
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    outline: none;
+    border-radius: 8px;
+  }
+  #filter form button {
+    background-color: #6237a0;
+    padding: 6px 12px;
+    border-radius: 8px;
+    color: #fff;
+    border: none;
+    outline: none;
+    grid-column-start: 1;
+    grid-column-end: 3;
   }
 }
 @media only screen and (min-width: 600px) {
@@ -381,6 +505,12 @@ body {
   }
 }
 @media only screen and (min-width: 600px) {
+  .announcessection {
+    margin-top: 0;
+  }
+  .announcessection h2 {
+    margin: 40px auto;
+  }
   .announcessection #announce-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -486,48 +616,6 @@ body {
   }
   #categories #categories-list .category:hover {
     transform: scale(106%);
-  }
-  #search-announce {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 120px;
-  }
-}
-@media only screen and (min-width: 600px) and (min-width: 1500px) {
-  #search-announce {
-    padding: 20px 12vw;
-  }
-}
-@media only screen and (min-width: 600px) and (min-width: 600px) and (max-width: 1499px) {
-  #search-announce {
-    padding: 20px 5vw;
-  }
-}
-@media only screen and (min-width: 600px) {
-  #search-announce h4 {
-    font-weight: 400;
-    font-size: 20px;
-  }
-  #search-announce form {
-    display: grid;
-    grid-template-columns: 4fr 1fr;
-    gap: 10px;
-  }
-  #search-announce form input[type=text] {
-    padding: 8px 16px;
-    border: 1px solid #ccc;
-    outline: none;
-    border-radius: 8px;
-  }
-  #search-announce form input[type=submit] {
-    background-color: #6237a0;
-    padding: 6px 12px;
-    border-radius: 8px;
-    color: #fff;
-    border: none;
-    outline: none;
   }
   #pagedlist {
     width: 100%;

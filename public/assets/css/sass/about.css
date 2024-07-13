@@ -99,6 +99,7 @@ body {
   header #top-header #top-center-header {
     display: flex;
     align-items: center;
+    position: relative;
   }
   header #top-header #top-center-header ul {
     list-style: none;
@@ -129,6 +130,42 @@ body {
   }
   header #top-header #top-center-header ul li:hover::after {
     width: 100%;
+  }
+  header #top-header #top-center-header #allproductsmegamenu {
+    position: absolute;
+    top: 80px;
+    background-color: white;
+    padding: 10px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    border: 1px solid #262626;
+    display: none;
+  }
+  header #top-header #top-center-header #allproductsmegamenu .category {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: #262626;
+    text-decoration: none;
+    margin: 4px 0;
+  }
+  header #top-header #top-center-header #allproductsmegamenu .category i {
+    width: 30px;
+    text-align: center;
+  }
+  header #top-header #top-center-header #allproductsmegamenu .category p {
+    margin: 0;
+    text-wrap: wrap;
+    word-wrap: break-word;
+    margin-left: 10px;
+    width: calc(100% - 40px);
+    font-size: 20px;
+    font-weight: 500;
+  }
+  header #top-header #top-center-header #allproductsmegamenu .category:hover {
+    color: #6237a0;
   }
   header #top-header #top-right-header {
     display: flex;

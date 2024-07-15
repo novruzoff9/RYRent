@@ -1,9 +1,16 @@
-$light-grey: #f2f4f8;
-$dark-blue: #4056a1;
-
-$green: #09b451;
-$light-green: #e1ffee;
+//$primary-color: #1450e8;
+$primary-color: #6237a0;
+$secondary-color: #1450e8;
+//$secondary-color: #c30dfa;
+$thirdy-color: #f81734;
+$light-green: #EEF2F6;
 $light-blue: #ddffff;
+$light-purple: #f0e6ff;
+$light-grey: #EEF2F6;
+$green: #09b451;
+
+
+
 
 $section-padding: 20px 200px;
 $mobile-section-padding: 20px;
@@ -33,6 +40,9 @@ $mobile-section-padding: 20px;
   border: 1px solid #ccc;
   outline: none;
   border-radius: 8px;
+  &:focus{
+    border-color: $secondary-color;
+  }
 }
 
 @mixin action-button($color) {

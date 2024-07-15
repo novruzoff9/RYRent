@@ -3,7 +3,7 @@
 }
 
 body {
-  background-color: #f2f4f8 !important;
+  background-color: #EEF2F6 !important;
 }
 
 section {
@@ -38,7 +38,7 @@ section h5 {
 @media only screen and (min-width: 600px) {
   aside {
     height: 100vh;
-    background-color: #09b451;
+    background-color: #6237a0;
     width: 250px;
     position: fixed;
     transition: width 0.4s ease;
@@ -136,6 +136,9 @@ section h5 {
     outline: none;
     border-radius: 8px;
   }
+  header #header-left input:focus {
+    border-color: #1450e8;
+  }
   header #header-right {
     display: flex;
     flex-direction: row;
@@ -190,7 +193,7 @@ section h5 {
     flex-direction: row;
     justify-content: space-between;
     padding: 20px;
-    background-color: #09b451;
+    background-color: #6237a0;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
   }
@@ -202,7 +205,7 @@ section h5 {
   }
   header #notficiations-menu .header p.new {
     background-color: #fff;
-    color: #09b451;
+    color: #6237a0;
     border-radius: 8px;
     padding: 4px 8px;
     margin: 0;
@@ -229,7 +232,7 @@ section h5 {
   }
   header #notficiations-menu .content .alert i.settings-alert {
     background-color: #ddffff;
-    color: #4056a1;
+    color: #1450e8;
   }
   header #notficiations-menu .content .alert i.message-alert {
     background-color: #fde8e4;
@@ -256,7 +259,7 @@ section h5 {
   }
   header #notficiations-menu .content .seeall {
     margin: 10px auto;
-    background-color: #09b451;
+    background-color: #6237a0;
     color: #fff;
     text-decoration: none;
     border-radius: 8px;
@@ -282,7 +285,7 @@ section h5 {
     flex-direction: row;
     justify-content: space-between;
     padding: 20px;
-    background-color: #09b451;
+    background-color: #6237a0;
     border-top-left-radius: 12px;
     border-top-right-radius: 12px;
   }
@@ -315,7 +318,7 @@ section h5 {
     justify-content: center;
     align-items: center;
     background-color: #ddffff;
-    color: #4056a1;
+    color: #1450e8;
   }
   header #profile-menu .content a p {
     color: #030303;

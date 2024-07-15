@@ -76,7 +76,7 @@
         flex-direction: row;
         justify-content: space-between;
         padding: 20px;
-        background-color: $green;
+        background-color: $primary-color;
         border-top-left-radius: 12px;
         border-top-right-radius: 12px;
         p.title {
@@ -87,7 +87,7 @@
         }
         p.new {
           background-color: #fff;
-          color: $green;
+          color: $primary-color;
           border-radius: 8px;
           padding: 4px 8px;
           margin: 0;
@@ -110,7 +110,7 @@
             @include flex-center();
             &.settings-alert {
               background-color: $light-blue;
-              color: $dark-blue;
+              color: $secondary-color;
             }
             &.message-alert {
               background-color: #fde8e4;
@@ -139,7 +139,7 @@
         }
         .seeall {
           margin: 10px auto;
-          background-color: $green;
+          background-color: $primary-color;
           color: #fff;
           text-decoration: none;
           border-radius: 8px;
@@ -164,7 +164,7 @@
         flex-direction: row;
         justify-content: space-between;
         padding: 20px;
-        background-color: $green;
+        background-color: $primary-color;
         border-top-left-radius: 12px;
         border-top-right-radius: 12px;
         p.title {
@@ -193,7 +193,7 @@
             border-radius: 8px;
             @include flex-center();
             background-color: $light-blue;
-            color: $dark-blue;
+            color: $secondary-color;
           }
           p{
             color: #030303;
